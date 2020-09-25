@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="438.0" prefWidth="747.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="biz_app.SalesController">
+    <stylesheets>
+        <URL value="@sales.css" />
+    </stylesheets>
+   <children>
+      <VBox alignment="CENTER" maxHeight="-Infinity" prefHeight="400.0" prefWidth="725.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="BOTTOM_CENTER" layoutY="27.0" maxHeight="-Infinity" prefHeight="492.0" prefWidth="721.0" spacing="5.0" style="-fx-background-color: #3B0F39; -fx-background-radius: 20;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="27.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox maxHeight="-Infinity" VBox.vgrow="ALWAYS">
+                     <children>
+                        <HBox alignment="BOTTOM_LEFT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="42.0" prefWidth="512.0" spacing="20.0" style="-fx-background-color: #9F899E; -fx-border-color: black; -fx-background-radius: 200; -fx-border-radius: 200;" HBox.hgrow="ALWAYS">
+                           <children>
+                              <JFXButton layoutX="10.0" layoutY="10.0" ripplerFill="#1b0851" style="-fx-background-color: darkslateblue; -fx-background-radius: 20;" text="Save" textFill="#f2f0f0" underline="true" HBox.hgrow="ALWAYS">
+                                 <tooltip>
+                                    <Tooltip text="Click To  Make Sales" />
+                                 </tooltip></JFXButton>
+                              <JFXButton ripplerFill="#1f0068" style="-fx-background-color: orange; -fx-background-radius: 20;" text="Edit" textFill="#f2f0f0" underline="true" HBox.hgrow="ALWAYS">
+                                 <tooltip>
+                                    <Tooltip text="Click To Edit  The Selected Sales Records" />
+                                 </tooltip></JFXButton>
+                              <JFXButton layoutX="47.0" layoutY="10.0" ripplerFill="#1f0068" style="-fx-background-color: green; -fx-background-radius: 20;" text="Clear" textFill="#f2f0f0" underline="true" HBox.hgrow="ALWAYS">
+                                 <tooltip>
+                                    <Tooltip text="Click To Clear All Input Fields" />
+                                 </tooltip></JFXButton>
+                              <JFXButton layoutX="47.0" layoutY="10.0" ripplerFill="#1f0068" style="-fx-background-color: red; -fx-background-radius: 20;" text="Delete" textFill="#f2f0f0" underline="true" HBox.hgrow="ALWAYS">
+                                 <tooltip>
+                                    <Tooltip text="Click To Delete Selected Sales Records" />
+                                 </tooltip></JFXButton>
+                           </children>
+                           <effect>
+                              <InnerShadow height="68.44" radius="52.9325" width="145.29" />
+                           </effect>
+                           <padding>
+                              <Insets bottom="8.0" left="10.0" />
+                           </padding>
+                        </HBox>
+                        <Text fill="#e2dae4" opacity="0.78" strokeType="OUTSIDE" strokeWidth="0.0" text="Sales" textAlignment="CENTER" underline="true" wrappingWidth="208.13671875" HBox.hgrow="ALWAYS">
+                           <effect>
+                              <DropShadow color="#070007" height="41.53" radius="9.8825" spread="0.42" width="0.0" />
+                           </effect>
+                           <font>
+                              <Font name="Batang" size="43.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox minWidth="-Infinity" prefHeight="351.0" prefWidth="725.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="201.0" prefWidth="227.0" spacing="20.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Text fill="GREEN" strokeType="OUTSIDE" strokeWidth="0.0" text="Costumers Info :" wrappingWidth="219.705078125">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Text>
+                              <JFXComboBox fx:id="department211" editable="true" focusColor="#7a3675" labelFloat="true" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="213.0" promptText="Costumers Name" style="-fx-text-inner-color: WHITE; -fx-prompt-text-fill: WHITE;" unFocusColor="#046b13" />
+                              <JFXTextField fx:id="cosyumerphone" focusColor="#7a3675" labelFloat="true" layoutX="20.0" layoutY="30.0" onKeyReleased="#Salesww" prefHeight="25.0" prefWidth="157.0" promptText="Costumers Phone Number" style="-fx-prompt-text-fill: #1F0068; -fx-text-inner-color: #1F0068; -fx-text-inner-color: white; -fx-prompt-text-fill: white;" unFocusColor="GREEN" />
+                              <JFXTextField fx:id="bizname13111" focusColor="#7a3675" labelFloat="true" layoutX="20.0" layoutY="75.0" prefHeight="25.0" prefWidth="157.0" promptText="Costumers Email Address" style="-fx-prompt-text-fill: #1F0068; -fx-text-inner-color: #1F0068; -fx-text-inner-color: white; -fx-prompt-text-fill: white;" unFocusColor="GREEN" />
+                              <VBox alignment="BOTTOM_LEFT" prefHeight="74.0" prefWidth="220.0" spacing="20.0">
+                                 <children>
+                                    <Text fill="GREEN" strokeType="OUTSIDE" strokeWidth="0.0" text="Sales Date :" wrappingWidth="64.705078125">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Text>
+                                    <DatePicker maxWidth="1.7976931348623157E308" opacity="0.51" prefHeight="25.0" prefWidth="150.0" promptText="Sales Date" showWeekNumbers="true" style="-fx-background-color: green;" />
+                                 </children>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets left="10.0" right="10.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                        <VBox prefHeight="347.0" prefWidth="228.0" spacing="20.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Text fill="GREEN" strokeType="OUTSIDE" strokeWidth="0.0" text="Make Orders :" wrappingWidth="219.705078125">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Text>
+                              <JFXComboBox fx:id="department2111" editable="true" focusColor="#7a3675" labelFloat="true" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="213.0" promptText="Products Name" style="-fx-text-inner-color: WHITE; -fx-prompt-text-fill: WHITE;" unFocusColor="#046b13" />
+                              <JFXTextArea focusColor="#7a3675" labelFloat="true" prefHeight="68.0" prefWidth="221.0" promptText="Categories Description" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="GREEN" />
+                              <JFXComboBox fx:id="department21111" editable="true" focusColor="#7a3675" labelFloat="true" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="213.0" promptText="Unit Of Sales" style="-fx-text-inner-color: WHITE; -fx-prompt-text-fill: WHITE;" unFocusColor="#046b13" />
+                              <JFXTextField fx:id="bizname1321" focusColor="#7a3675" labelFloat="true" prefHeight="25.0" prefWidth="157.0" promptText="Prize Per Unit" style="-fx-prompt-text-fill: #1F0068; -fx-text-inner-color: #1F0068; -fx-text-inner-color: white; -fx-prompt-text-fill: white;" unFocusColor="GREEN" />
+                              <JFXTextField fx:id="bizname131" focusColor="#7a3675" labelFloat="true" layoutX="20.0" layoutY="30.0" prefHeight="25.0" prefWidth="157.0" promptText="Quantity Of Order" style="-fx-prompt-text-fill: #1F0068; -fx-text-inner-color: #1F0068; -fx-text-inner-color: white; -fx-prompt-text-fill: white;" unFocusColor="GREEN" />
+                              <HBox>
+                                 <children>
+                                    <StackPane fx:id="bukas">
+                                       <children>
+                                          <JFXButton onAction="#Sales" prefHeight="30.0" prefWidth="113.0" ripplerFill="#1f0068" style="-fx-background-color: green; -fx-background-radius: 20;" text="Add " textFill="#f2f0f0" underline="true">
+                                             <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@images/Add%20Shopping%20Cart_96px_2.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <font>
+                                                <Font size="9.0" />
+                                             </font>
+                                             <tooltip>
+                                                <Tooltip text="Add  Goods Ordered To The Cart" />
+                                             </tooltip>
+                                          </JFXButton>
+                                       </children>
+                                    </StackPane>
+                                    <JFXButton layoutX="10.0" layoutY="10.0" onAction="#Sales1" prefHeight="30.0" prefWidth="113.0" ripplerFill="#1f0068" style="-fx-background-color: red; -fx-background-radius: 20;" text="Remove " textFill="#f2f0f0" underline="true">
+                                       <graphic>
+                                          <ImageView fitHeight="22.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@images/Checkout_96px.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <font>
+                                          <Font size="9.0" />
+                                       </font>
+                                       <tooltip>
+                                          <Tooltip text="Remove Selected Goods  From The Cart" />
+                                       </tooltip>
+                                    </JFXButton>
+                                    <JFXButton layoutX="120.0" layoutY="10.0" prefHeight="30.0" prefWidth="113.0" ripplerFill="#1f0068" style="-fx-background-color: orange; -fx-background-radius: 20;" text="Clear " textFill="#f2f0f0" underline="true">
+                                       <graphic>
+                                          <ImageView fitHeight="22.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@images/Checkout_96px.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <font>
+                                          <Font size="9.0" />
+                                       </font>
+                                       <tooltip>
+                                          <Tooltip text="Clear All Sales Orders From The Cart" />
+                                       </tooltip>
+                                    </JFXButton>
+                                 </children>
+                                 <effect>
+                                    <Lighting>
+                                       <bumpInput>
+                                          <Shadow />
+                                       </bumpInput>
+                                       <light>
+                                          <Light.Distant />
+                                       </light>
+                                    </Lighting>
+                                 </effect>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets left="10.0" right="10.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="347.0" prefWidth="237.0" spacing="14.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <AnchorPane fx:id="hhhh" prefHeight="23.0" prefWidth="263.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <ImageView fitHeight="22.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/Appointment%20Reminders_96px.png" />
+                                       </image>
+                                       <effect>
+                                          <Lighting>
+                                             <bumpInput>
+                                                <Shadow />
+                                             </bumpInput>
+                                             <light>
+                                                <Light.Distant />
+                                             </light>
+                                          </Lighting>
+                                       </effect>
+                                    </ImageView>
+                                    <Label fx:id="notification" alignment="CENTER" contentDisplay="CENTER" layoutX="11.0" layoutY="-11.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="9.0" style="-fx-background-color: ORANGE; -fx-background-radius: 2000;" textFill="WHITE" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="-11.0">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <effect>
+                                          <Lighting diffuseConstant="1.16" specularConstant="0.19" specularExponent="4.19" surfaceScale="2.08">
+                                             <bumpInput>
+                                                <Shadow>
+                                                   <input>
+                                                      <DropShadow height="77.34" radius="33.7225" spread="0.06" width="59.55" />
+                                                   </input>
+                                                </Shadow>
+                                             </bumpInput>
+                                             <light>
+                                                <Light.Distant />
+                                             </light>
+                                          </Lighting>
+                                       </effect>
+                                    </Label>
+                                    <TextField layoutX="118.0" layoutY="2.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="137.0" promptText="Total Prize Of Orders" style="-fx-background-radius: 2000;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="118.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="0.0" />
+                                    <Label fx:id="notification1" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="-8.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="9.0" style="-fx-background-color: ORANGE; -fx-background-radius: 2000;" textFill="WHITE">
+                                       <effect>
+                                          <Lighting diffuseConstant="1.16" specularConstant="0.19" specularExponent="4.19" surfaceScale="2.08">
+                                             <bumpInput>
+                                                <Shadow>
+                                                   <input>
+                                                      <DropShadow height="77.34" radius="33.7225" spread="0.06" width="59.55" />
+                                                   </input>
+                                                </Shadow>
+                                             </bumpInput>
+                                             <light>
+                                                <Light.Distant />
+                                             </light>
+                                          </Lighting>
+                                       </effect>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <Accordion maxWidth="1.7976931348623157E308" prefHeight="356.0" prefWidth="310.0" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+                                <panes>
+                                  <TitledPane fx:id="cart" animated="false" prefHeight="346.0" prefWidth="235.0" text="Cart">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #3B0F39;">
+                                             <children>
+                                                <TableView minHeight="-Infinity" minWidth="-Infinity" opacity="0.51" prefHeight="366.0" prefWidth="248.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <columns>
+                                                      <TableColumn prefWidth="134.0" text="COSTUMERS NAME" />
+                                                      <TableColumn prefWidth="134.0" text="PHONE NUMBER" />
+                                                      <TableColumn prefWidth="134.0" text="EMAIL" />
+                                                      <TableColumn prefWidth="134.0" text="DATE" />
+                                                      <TableColumn prefWidth="134.0" text="PRODUCT" />
+                                                      <TableColumn prefWidth="134.0" text="UNIT" />
+                                                      <TableColumn prefWidth="134.0" text="PRIZE PER UNIT" />
+                                                      <TableColumn prefWidth="134.0" text="QTY OF ORDER" />
+                                                      <TableColumn prefWidth="134.0" text="TOTAL PRIZE OF ORDER" />
+                                                   </columns>
+                                                </TableView>
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                       <graphic>
+                                          <ImageView fitHeight="33.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@images/Shopping%20Cart_96px.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <textFill>
+                                          <LinearGradient endX="1.0" endY="1.0" startX="0.18095238095238095" startY="0.34285714285714286">
+                                             <stops>
+                                                <Stop color="#191b19" />
+                                                <Stop color="#046b04" offset="1.0" />
+                                             </stops>
+                                          </LinearGradient>
+                                       </textFill>
+                                       <font>
+                                          <Font name="High Tower Text Italic" size="12.0" />
+                                       </font>
+                                       <effect>
+                                          <InnerShadow height="138.0" radius="34.0" width="0.0" />
+                                       </effect>
+                                       <tooltip>
+                                          <Tooltip text="View List Of Products Ordered" />
+                                       </tooltip>
+                                  </TitledPane>
+                                    <TitledPane animated="false" layoutX="10.0" layoutY="10.0" prefHeight="346.0" prefWidth="235.0" text="Todays Sales">
+                                       <content>
+                                          <VBox prefHeight="219.0" prefWidth="231.0" style="-fx-background-color: #3B0F39;">
+                                             <children>
+                                                <HBox alignment="CENTER" minWidth="-Infinity" prefHeight="25.0" prefWidth="209.0" spacing="10.0">
+                                                   <children>
+                                                      <JFXComboBox fx:id="department21121" editable="true" focusColor="#7a3675" labelFloat="true" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="104.0" promptText="Costumers Name" style="-fx-text-inner-color: WHITE; -fx-prompt-text-fill: WHITE;" unFocusColor="#046b13" HBox.hgrow="ALWAYS">
+                                                         <HBox.margin>
+                                                            <Insets />
+                                                         </HBox.margin>
+                                                      </JFXComboBox>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets bottom="10.0" />
+                                                   </VBox.margin>
+                                                </HBox>
+                                                <TableView minHeight="-Infinity" minWidth="-Infinity" opacity="0.51" prefHeight="135.0" prefWidth="221.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" VBox.vgrow="ALWAYS">
+                                                   <columns>
+                                                      <TableColumn prefWidth="134.0" text="COSTUMERS NAME" />
+                                                      <TableColumn prefWidth="134.0" text="PHONE NUMBER" />
+                                                      <TableColumn prefWidth="134.0" text="EMAIL" />
+                                                      <TableColumn prefWidth="134.0" text="DATE" />
+                                                      <TableColumn prefWidth="134.0" text="PRODUCT" />
+                                                      <TableColumn prefWidth="134.0" text="UNIT" />
+                                                      <TableColumn prefWidth="134.0" text="PRIZE PER UNIT" />
+                                                      <TableColumn prefWidth="134.0" text="QTY OF ORDER" />
+                                                      <TableColumn prefWidth="134.0" text="TOTAL PRIZE OF ORDER" />
+                                                   </columns>
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                </TableView>
+                                             </children>
+                                          </VBox>
+                                       </content>
+                                       <graphic>
+                                          <ImageView fitHeight="33.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@images/Land%20Sales_96px_2.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <textFill>
+                                          <LinearGradient endX="1.0" endY="1.0" startX="0.18095238095238095" startY="0.34285714285714286">
+                                             <stops>
+                                                <Stop color="#191b19" />
+                                                <Stop color="#046b04" offset="1.0" />
+                                             </stops>
+                                          </LinearGradient>
+                                       </textFill>
+                                       <font>
+                                          <Font name="High Tower Text Italic" size="12.0" />
+                                       </font>
+                                       <effect>
+                                          <InnerShadow height="138.0" radius="34.0" width="0.0" />
+                                       </effect>
+                                       <tooltip>
+                                          <Tooltip text="View  List Of Todays Sales" />
+                                       </tooltip>
+                                    </TitledPane>
+                                    <TitledPane animated="false" layoutX="10.0" layoutY="280.0" prefHeight="346.0" prefWidth="235.0" text="Sales History">
+                                       <content>
+                                          <VBox layoutX="9.600000381469727" layoutY="9.600000381469727" prefHeight="219.0" prefWidth="231.0" style="-fx-background-color: #3B0F39;">
+                                             <children>
+                                                <HBox alignment="CENTER" minWidth="-Infinity" prefHeight="25.0" prefWidth="209.0" spacing="10.0">
+                                                   <children>
+                                                      <JFXComboBox fx:id="saleshistoname" editable="true" focusColor="#7a3675" labelFloat="true" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="104.0" promptText="Costumers Name" style="-fx-text-inner-color: WHITE; -fx-prompt-text-fill: WHITE;" unFocusColor="#046b13" HBox.hgrow="ALWAYS">
+                                                         <HBox.margin>
+                                                            <Insets />
+                                                         </HBox.margin>
+                                                      </JFXComboBox>
+                                                      <DatePicker maxWidth="1.7976931348623157E308" opacity="0.51" prefHeight="25.0" prefWidth="97.0" promptText="Sales Date" showWeekNumbers="true" style="-fx-background-color: green;" HBox.hgrow="ALWAYS" />
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets bottom="10.0" />
+                                                   </VBox.margin>
+                                                </HBox>
+                                                <TableView minHeight="-Infinity" minWidth="-Infinity" opacity="0.51" prefHeight="135.0" prefWidth="221.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" VBox.vgrow="ALWAYS">
+                                                   <columns>
+                                                      <TableColumn prefWidth="134.0" text="COSTUMERS NAME" />
+                                                      <TableColumn prefWidth="134.0" text="PHONE NUMBER" />
+                                                      <TableColumn prefWidth="134.0" text="EMAIL" />
+                                                      <TableColumn prefWidth="134.0" text="DATE" />
+                                                      <TableColumn prefWidth="134.0" text="PRODUCT" />
+                                                      <TableColumn prefWidth="134.0" text="UNIT" />
+                                                      <TableColumn prefWidth="134.0" text="PRIZE PER UNIT" />
+                                                      <TableColumn prefWidth="134.0" text="QTY OF ORDER" />
+                                                      <TableColumn prefWidth="134.0" text="TOTAL PRIZE OF ORDER" />
+                                                   </columns>
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                </TableView>
+                                             </children>
+                                          </VBox>
+                                       </content>
+                                       <effect>
+                                          <InnerShadow height="138.0" radius="34.0" width="0.0" />
+                                       </effect>
+                                       <font>
+                                          <Font name="High Tower Text Italic" size="12.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fitHeight="33.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@images/Planner_96px_2.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <textFill>
+                                          <LinearGradient endX="1.0" endY="1.0" startX="0.18095238095238095" startY="0.34285714285714286">
+                                             <stops>
+                                                <Stop color="#191b19" />
+                                                <Stop color="#046b04" offset="1.0" />
+                                             </stops>
+                                          </LinearGradient>
+                                       </textFill>
+                                       <tooltip>
+                                          <Tooltip text="View List Of Sales Records" />
+                                       </tooltip>
+                                    </TitledPane>
+                                </panes>
+                                 <VBox.margin>
+                                    <Insets right="10.0" />
+                                 </VBox.margin>
+                              </Accordion>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+               <effect>
+                  <DropShadow height="41.51" radius="22.4775" spread="0.44" width="50.4" />
+               </effect>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

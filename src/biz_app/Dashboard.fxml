@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="537.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="biz_app.DashboardController">
+   <children>
+      <HBox fx:id="bar" prefHeight="114.0" prefWidth="1142.0" StackPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="70.0" prefWidth="129.0">
+               <effect>
+                  <InnerShadow height="77.34" radius="18.835" width="0.0" />
+               </effect>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <Separator maxHeight="-Infinity" minHeight="-Infinity" prefHeight="24.0" prefWidth="829.0" style="-fx-background-color: #3B0F39;" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Separator>
+      <VBox prefHeight="399.0" prefWidth="1139.0" VBox.vgrow="ALWAYS">
+         <children>
+            <HBox prefHeight="47.0" prefWidth="1139.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+               <children>
+                  <Text fill="#2f0436" strokeType="OUTSIDE" strokeWidth="0.0" text="Store Report Alert !!!" wrappingWidth="157.04296875">
+                     <font>
+                        <Font name="Cambria Math" size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </HBox>
+            <VBox fx:id="www" prefHeight="331.0" prefWidth="829.0" style="-fx-background-color: whi#ABABABte;" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox fx:id="basepane" alignment="CENTER" prefHeight="377.0" prefWidth="1079.0" spacing="100.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+                     <children>
+                        <StackPane prefHeight="407.0" prefWidth="1079.0" style="-fx-background-color: #3B0F39;">
+                           <children>
+                              <VBox fx:id="v3" layoutX="10.0" layoutY="10.0" maxWidth="-Infinity" prefHeight="263.0" prefWidth="270.0" style="-fx-background-color: #320D31;" StackPane.alignment="CENTER">
+                                 <children>
+                                    <HBox alignment="TOP_RIGHT" prefHeight="52.0" prefWidth="310.0">
+                                       <children>
+                                          <Text fill="#3b0f39" strokeType="OUTSIDE" strokeWidth="0.0" text="Debtors Indicators" wrappingWidth="141.13671875">
+                                             <effect>
+                                                <DropShadow offsetY="0.6" spread="0.06">
+                                                   <input>
+                                                      <Reflection />
+                                                   </input>
+                                                </DropShadow>
+                                             </effect>
+                                          </Text>
+                                          <StackPane>
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="45.0" prefWidth="47.0" style="-fx-background-radius: 2000; -fx-border-color: #53315A; -fx-border-radius: 2000; -fx-border-width: 7;" text="100%">
+                                                   <font>
+                                                      <Font size="9.0" />
+                                                   </font>
+                                                </Label>
+                                                <JFXSpinner />
+                                             </children>
+                                          </StackPane>
+                                       </children>
+                                    </HBox>
+                                    <StackPane>
+                                       <children>
+                                          <JFXListView maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="203.0" prefWidth="208.0" style="-fx-background-color: #53315A; -fx-background-radius: 70000; -fx-border-radius: 70000; -fx-border-color: whitesmoke; -fx-border-width: 5;" />
+                                          <Text fill="#fcf1f1" strokeType="OUTSIDE" strokeWidth="0.0" text="No Result Yet">
+                                             <effect>
+                                                <DropShadow height="71.41" radius="77.395" spread="0.78" width="240.17" />
+                                             </effect>
+                                             <font>
+                                                <Font name="Batang" size="12.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                                 <effect>
+                                    <DropShadow height="127.5" radius="95.125" width="255.0" />
+                                 </effect>
+                              </VBox>
+                              <VBox fx:id="v12" layoutX="10.0" layoutY="10.0" maxWidth="-Infinity" prefHeight="263.0" prefWidth="270.0" style="-fx-background-color: #320D31;">
+                                 <children>
+                                    <HBox alignment="TOP_RIGHT" prefHeight="52.0" prefWidth="310.0">
+                                       <children>
+                                          <Text fill="#790707" strokeType="OUTSIDE" strokeWidth="0.0" text="Finished Product Indicator" wrappingWidth="141.13671875">
+                                             <effect>
+                                                <DropShadow offsetY="0.6" spread="0.06">
+                                                   <input>
+                                                      <Reflection />
+                                                   </input>
+                                                </DropShadow>
+                                             </effect>
+                                          </Text>
+                                          <StackPane>
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="45.0" prefWidth="47.0" style="-fx-background-radius: 2000; -fx-border-color: #A36769; -fx-border-radius: 2000; -fx-border-width: 7;" text="100%">
+                                                   <font>
+                                                      <Font size="9.0" />
+                                                   </font>
+                                                </Label>
+                                                <JFXSpinner />
+                                             </children>
+                                          </StackPane>
+                                       </children>
+                                    </HBox>
+                                    <StackPane>
+                                       <children>
+                                          <JFXListView maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="203.0" prefWidth="208.0" style="-fx-background-color: #A36769; -fx-background-radius: 70000; -fx-border-radius: 70000; -fx-border-color: whitesmoke; -fx-border-width: 5;" />
+                                          <Text fill="#fcf1f1" strokeType="OUTSIDE" strokeWidth="0.0" text="No Result Yet">
+                                             <effect>
+                                                <DropShadow height="71.41" radius="77.395" spread="0.78" width="240.17" />
+                                             </effect>
+                                             <font>
+                                                <Font name="Batang" size="12.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                                 <effect>
+                                    <DropShadow height="127.5" radius="95.125" width="255.0" />
+                                 </effect>
+                              </VBox>
+                              <VBox fx:id="v1" maxWidth="-Infinity" prefHeight="302.0" prefWidth="270.0" style="-fx-background-color: #320D31;">
+                                 <children>
+                                    <HBox alignment="TOP_RIGHT" maxHeight="-Infinity" prefHeight="58.0" prefWidth="301.0">
+                                       <children>
+                                          <Text fill="#b97d10" strokeType="OUTSIDE" strokeWidth="0.0" text="Low Product Indicator" wrappingWidth="141.13671875">
+                                             <effect>
+                                                <DropShadow offsetY="0.6" spread="0.06">
+                                                   <input>
+                                                      <Reflection />
+                                                   </input>
+                                                </DropShadow>
+                                             </effect>
+                                          </Text>
+                                          <StackPane>
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="45.0" prefWidth="47.0" style="-fx-background-radius: 2000; -fx-border-color: #C2A167; -fx-border-radius: 2000; -fx-border-width: 7;" text="100%">
+                                                   <font>
+                                                      <Font size="9.0" />
+                                                   </font>
+                                                </Label>
+                                                <JFXSpinner />
+                                             </children>
+                                          </StackPane>
+                                       </children>
+                                    </HBox>
+                                    <StackPane>
+                                       <children>
+                                          <JFXListView maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="203.0" prefWidth="208.0" style="-fx-background-color: #C2A167; -fx-background-radius: 70000; -fx-border-radius: 70000; -fx-border-color: whitesmoke; -fx-border-width: 5;" />
+                                          <Text fill="#fcf1f1" strokeType="OUTSIDE" strokeWidth="0.0" text="No Result Yet">
+                                             <effect>
+                                                <DropShadow height="71.41" radius="77.395" spread="0.78" width="240.17" />
+                                             </effect>
+                                             <font>
+                                                <Font name="Batang" size="12.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                                 <effect>
+                                    <DropShadow height="88.21000000000001" radius="43.790000000000006" width="88.95" />
+                                 </effect>
+                              </VBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </StackPane>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>

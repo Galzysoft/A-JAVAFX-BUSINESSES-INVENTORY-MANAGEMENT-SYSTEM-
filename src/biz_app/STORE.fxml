@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import com.jfoenix.svg.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="486.0" prefWidth="758.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="biz_app.STOREController">
+    <stylesheets>
+        <URL value="@store.css" />
+    </stylesheets>
+   <children>
+      <JFXTabPane layoutX="-1.0" layoutY="9.0" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="521.0" prefWidth="521.0" side="RIGHT" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <tabs>
+            <Tab text="Stock">
+              <content>
+                  <AnchorPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="497.0" prefWidth="512.0">
+                     <children>
+                        <VBox layoutY="31.0" prefHeight="507.0" prefWidth="721.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <HBox alignment="BOTTOM_CENTER" layoutX="-14.0" layoutY="14.0" maxHeight="-Infinity" prefHeight="63.0" prefWidth="721.0" AnchorPane.bottomAnchor="501.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="8.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Text fill="#26022f" layoutX="317.0" layoutY="49.0" opacity="0.78" strokeType="OUTSIDE" strokeWidth="0.0" text="Stocks" textAlignment="CENTER" underline="true" wrappingWidth="208.13671875" AnchorPane.bottomAnchor="465.9111328125" AnchorPane.leftAnchor="317.0" AnchorPane.rightAnchor="195.86328125" AnchorPane.topAnchor="12.0888671875" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font name="Batang" size="43.0" />
+                                       </font>
+                                       <effect>
+                                          <DropShadow color="#070007" height="136.42" radius="33.605" spread="0.55" width="0.0" />
+                                       </effect>
+                                    </Text>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="521.0" spacing="20.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <HBox maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="494.0" spacing="20.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <JFXButton buttonType="RAISED" layoutX="10.0" layoutY="10.0" ripplerFill="#1b0851" style="-fx-background-color: darkslateblue; -fx-background-radius: 20;" text="Add" textFill="#f2f0f0" underline="true" HBox.hgrow="ALWAYS" />
+                                          <JFXButton buttonType="RAISED" ripplerFill="#1f0068" style="-fx-background-color: orange; -fx-background-radius: 20;" text="Edit" textFill="#f2f0f0" underline="true" HBox.hgrow="ALWAYS" />
+                                          <JFXButton buttonType="RAISED" layoutX="47.0" layoutY="10.0" ripplerFill="#1f0068" style="-fx-background-color: green; -fx-background-radius: 20;" text="Clear" textFill="#f2f0f0" underline="true" HBox.hgrow="ALWAYS" />
+                                          <JFXButton buttonType="RAISED" layoutX="47.0" layoutY="10.0" maxHeight="1.7976931348623157E308" ripplerFill="#1f0068" style="-fx-background-color: red; -fx-background-radius: 20;" text="Delete" textFill="#f2f0f0" underline="true" HBox.hgrow="ALWAYS" />
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets right="330.0" />
+                                       </HBox.margin>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="20.0" right="10.0" top="2.0" />
+                                 </padding>
+                              </HBox>
+                              <VBox alignment="BOTTOM_CENTER" layoutY="62.0" prefHeight="334.0" prefWidth="721.0" spacing="10.0" style="-fx-background-color: #3B0F39; -fx-background-radius: 20;" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="62.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <VBox maxHeight="-Infinity" prefHeight="456.0" prefWidth="701.0" spacing="9.0" VBox.vgrow="ALWAYS">
+                                       <children>
+                                          <HBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="56.0" prefWidth="724.0" VBox.vgrow="ALWAYS">
+                                             <children>
+                                                <HBox alignment="BOTTOM_CENTER" maxWidth="1.7976931348623157E308" prefHeight="47.0" prefWidth="665.0" spacing="30.0" HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <HBox alignment="BOTTOM_CENTER" maxWidth="1.7976931348623157E308" prefHeight="27.0" prefWidth="549.0" spacing="30.0" HBox.hgrow="ALWAYS">
+                                                         <children>
+                                                            <JFXTextField fx:id="bizname21" focusColor="#7a3675" labelFloat="true" prefHeight="25.0" prefWidth="150.0" promptText="Search Stocks" style="-fx-prompt-text-fill: #1F0068; -fx-text-inner-color: #1F0068; -fx-text-inner-color: white; -fx-prompt-text-fill: white;" unFocusColor="GREEN" />
+                                                            <JFXRadioButton fx:id="id" text="ID" textFill="WHITE" HBox.hgrow="ALWAYS">
+                                                               <effect>
+                                                                  <Lighting>
+                                                                     <bumpInput>
+                                                                        <Shadow />
+                                                                     </bumpInput>
+                                                                     <light>
+                                                                        <Light.Distant />
+                                                                     </light>
+                                                                  </Lighting>
+                                                               </effect>
+                                                               <toggleGroup>
+                                                                  <ToggleGroup fx:id="STORE" />
+                                                               </toggleGroup>
+                                                               <font>
+                                                                  <Font name="System Bold" size="10.0" />
+                                                               </font>
+                                                            </JFXRadioButton>
+                                                            <JFXRadioButton fx:id="name" text="NAME" textFill="WHITE" toggleGroup="$STORE" HBox.hgrow="ALWAYS">
+                                                               <effect>
+                                                                  <Lighting>
+                                                                     <bumpInput>
+                                                                        <Shadow />
+                                                                     </bumpInput>
+                                                                     <light>
+                                                                        <Light.Distant />
+                                                                     </light>
+                                                                  </Lighting>
+                                                               </effect>
+                                                               <font>
+                                                                  <Font name="System Bold" size="10.0" />
+                                                               </font>
+                                                            </JFXRadioButton>
+                                                            <JFXRadioButton fx:id="id1" layoutX="10.0" layoutY="20.0" text="SUPPLIER" textFill="#fffefe" toggleGroup="$STORE" HBox.hgrow="ALWAYS">
+                                                               <effect>
+                                                                  <Lighting>
+                                                                     <bumpInput>
+                                                                        <Shadow />
+                                                                     </bumpInput>
+                                                                     <light>
+                                                                        <Light.Distant />
+                                                                     </light>
+                                                                  </Lighting>
+                                                               </effect>
+                                                               <font>
+                                                                  <Font name="System Bold" size="10.0" />
+                                                               </font>
+                                                            </JFXRadioButton>
+                                                            <JFXRadioButton fx:id="name1" layoutX="59.0" layoutY="20.0" text="BRAND" textFill="WHITE" toggleGroup="$STORE" HBox.hgrow="ALWAYS">
+                                                               <effect>
+                                                                  <Lighting>
+                                                                     <bumpInput>
+                                                                        <Shadow />
+                                                                     </bumpInput>
+                                                                     <light>
+                                                                        <Light.Distant />
+                                                                     </light>
+                                                                  </Lighting>
+                                                               </effect>
+                                                               <font>
+                                                                  <Font name="System Bold" size="10.0" />
+                                                               </font>
+                                                            </JFXRadioButton>
+                                                            <JFXRadioButton fx:id="name11" layoutX="145.0" layoutY="20.0" text="CATEGORY" textFill="WHITE" toggleGroup="$STORE" HBox.hgrow="ALWAYS">
+                                                               <effect>
+                                                                  <Lighting>
+                                                                     <bumpInput>
+                                                                        <Shadow />
+                                                                     </bumpInput>
+                                                                     <light>
+                                                                        <Light.Distant />
+                                                                     </light>
+                                                                  </Lighting>
+                                                               </effect>
+                                                               <font>
+                                                                  <Font name="System Bold" size="10.0" />
+                                                               </font>
+                                                            </JFXRadioButton>
+                                                            <JFXRadioButton fx:id="id11" layoutX="100.0" layoutY="20.0" maxWidth="1.7976931348623157E308" text="EXPDATE" textFill="#fffefe" toggleGroup="$STORE" HBox.hgrow="ALWAYS">
+                                                               <effect>
+                                                                  <Lighting>
+                                                                     <bumpInput>
+                                                                        <Shadow />
+                                                                     </bumpInput>
+                                                                     <light>
+                                                                        <Light.Distant />
+                                                                     </light>
+                                                                  </Lighting>
+                                                               </effect>
+                                                               <font>
+                                                                  <Font name="System Bold" size="10.0" />
+                                                               </font>
+                                                            </JFXRadioButton>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets top="10.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="BOTTOM_CENTER" prefHeight="315.0" prefWidth="701.0" spacing="20.0" VBox.vgrow="ALWAYS">
+                                             <children>
+                                                <HBox maxHeight="-Infinity" prefHeight="257.0" prefWidth="425.0" HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <VBox prefHeight="269.0" prefWidth="234.0" spacing="16.0" HBox.hgrow="ALWAYS">
+                                                         <children>
+                                                            <JFXTextField fx:id="bizname2" focusColor="#7a3675" labelFloat="true" layoutX="20.0" layoutY="30.0" prefHeight="25.0" prefWidth="150.0" promptText="Id" style="-fx-prompt-text-fill: #1F0068; -fx-text-inner-color: #1F0068; -fx-text-inner-color: white; -fx-prompt-text-fill: white;" unFocusColor="GREEN" VBox.vgrow="ALWAYS" />
+                                                            <JFXTextField fx:id="address" focusColor="#7a3675" labelFloat="true" layoutX="20.0" layoutY="30.0" prefHeight="25.0" prefWidth="150.0" promptText="Product Name" style="-fx-prompt-text-fill: #1F0068; -fx-text-inner-color: #1F0068; -fx-text-inner-color: white; -fx-prompt-text-fill: white;" unFocusColor="GREEN" VBox.vgrow="ALWAYS" />
+                                                            <JFXTextField fx:id="address2" focusColor="#7a3675" labelFloat="true" layoutX="20.0" layoutY="55.0" prefHeight="25.0" prefWidth="150.0" promptText="Quantity Supplied" style="-fx-prompt-text-fill: #1F0068; -fx-text-inner-color: #1F0068; -fx-text-inner-color: white; -fx-prompt-text-fill: white;" unFocusColor="GREEN" VBox.vgrow="ALWAYS" />
+                                                            <JFXTextField fx:id="address21" focusColor="#7a3675" labelFloat="true" layoutX="20.0" layoutY="235.0" prefHeight="25.0" prefWidth="150.0" promptText="Purchase Price" style="-fx-prompt-text-fill: #1F0068; -fx-text-inner-color: #1F0068; -fx-text-inner-color: white; -fx-prompt-text-fill: white;" unFocusColor="GREEN" VBox.vgrow="ALWAYS" />
+                                                            <JFXTextField fx:id="address211" focusColor="#7a3675" labelFloat="true" layoutX="20.0" layoutY="280.0" prefHeight="25.0" prefWidth="150.0" promptText="Sales Price" style="-fx-prompt-text-fill: #1F0068; -fx-text-inner-color: #1F0068; -fx-text-inner-color: white; -fx-prompt-text-fill: white;" unFocusColor="GREEN" VBox.vgrow="ALWAYS" />
+                                                            <JFXTextArea focusColor="#7a3675" labelFloat="true" maxHeight="-Infinity" prefHeight="59.0" prefWidth="156.0" promptText="Description" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="GREEN" VBox.vgrow="ALWAYS">
+                                                               <VBox.margin>
+                                                                  <Insets top="24.0" />
+                                                               </VBox.margin></JFXTextArea>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets left="10.0" right="10.0" />
+                                                         </padding>
+                                                      </VBox>
+                                                      <VBox layoutX="10.0" layoutY="10.0" prefHeight="290.0" prefWidth="210.0" spacing="16.0" HBox.hgrow="ALWAYS">
+                                                         <children>
+                                                            <JFXComboBox fx:id="department" focusColor="#7a3675" labelFloat="true" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="150.0" promptText="Supplied By" style="-fx-text-inner-color: WHITE; -fx-prompt-text-fill: WHITE;" unFocusColor="#046b13">
+                                                               <padding>
+                                                                  <Insets bottom="8.0" />
+                                                               </padding></JFXComboBox>
+                                                            <JFXComboBox fx:id="department1" focusColor="#7a3675" labelFloat="true" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="150.0" promptText="Brand" style="-fx-text-inner-color: WHITE; -fx-prompt-text-fill: WHITE;" unFocusColor="#046b13" VBox.vgrow="ALWAYS">
+                                                               <padding>
+                                                                  <Insets bottom="8.0" />
+                                                               </padding></JFXComboBox>
+                                                            <JFXComboBox fx:id="department11" focusColor="#7a3675" labelFloat="true" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="150.0" promptText="Category" style="-fx-text-inner-color: WHITE; -fx-prompt-text-fill: WHITE;" unFocusColor="#046b13" VBox.vgrow="ALWAYS">
+                                                               <padding>
+                                                                  <Insets bottom="8.0" />
+                                                               </padding></JFXComboBox>
+                                                            <JFXComboBox fx:id="department111" focusColor="#7a3675" labelFloat="true" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="150.0" promptText="Lower Unit" style="-fx-text-inner-color: WHITE; -fx-prompt-text-fill: WHITE;" unFocusColor="#046b13">
+                                                               <padding>
+                                                                  <Insets bottom="8.0" />
+                                                               </padding>
+                                                            </JFXComboBox>
+                                                            <Text fill="GREEN" strokeType="OUTSIDE" strokeWidth="0.0" text="Expiring Date" VBox.vgrow="ALWAYS">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <DatePicker maxWidth="1.7976931348623157E308" opacity="0.51" prefHeight="25.0" prefWidth="150.0" promptText="Expiring Date" showWeekNumbers="true" style="-fx-background-color: green;" VBox.vgrow="ALWAYS" />
+                                                            <Text fill="GREEN" strokeType="OUTSIDE" strokeWidth="0.0" text="Manufacturing Date :">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <DatePicker maxWidth="1.7976931348623157E308" opacity="0.51" prefHeight="25.0" prefWidth="150.0" promptText="Manufacturing Date" showWeekNumbers="true" style="-fx-background-color: green;" />
+                                                            <VBox>
+                                                               <children>
+                                                                  <HBox />
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets left="10.0" />
+                                                         </padding>
+                                                         <HBox.margin>
+                                                            <Insets />
+                                                         </HBox.margin>
+                                                      </VBox>
+                                                   </children>
+                                                   <HBox.margin>
+                                                      <Insets />
+                                                   </HBox.margin>
+                                                </HBox>
+                                                <TableView opacity="0.51" prefHeight="312.0" prefWidth="191.0" HBox.hgrow="ALWAYS">
+                                                  <columns>
+                                                    <TableColumn prefWidth="82.0" text="ID" />
+                                                    <TableColumn prefWidth="82.0" text="NAME" />
+                                                      <TableColumn prefWidth="82.0" text="QUANTITY" />
+                                                      <TableColumn prefWidth="82.0" text="UNIT" />
+                                                      <TableColumn prefWidth="82.0" text="SUPPLIER" />
+                                                      <TableColumn prefWidth="82.0" text="BRAND" />
+                                                      <TableColumn prefWidth="82.0" text="CATEGORY" />
+                                                      <TableColumn prefWidth="82.0" text="PURS PRICE" />
+                                                      <TableColumn prefWidth="82.0" text="SALES PRICE" />
+                                                      <TableColumn prefWidth="82.0" text="QUANTITY" />
+                                                      <TableColumn prefWidth="82.0" text="MAF DATE" />
+                                                      <TableColumn prefWidth="82.0" text="EXP DATE" />
+                                                      <TableColumn prefWidth="82.0" text="RMA" />
+                                                  </columns>
+                                                </TableView>
+                                             </children>
+                                             <padding>
+                                                <Insets top="20.0" />
+                                             </padding>
+                                          </HBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </VBox>
+                                 </children>
+                                 <effect>
+                                    <DropShadow height="249.07" radius="125.5175" spread="0.44" width="255.0" />
+                                 </effect>
+                                 <VBox.margin>
+                                    <Insets bottom="80.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="supplier" onSelectionChanged="#supplierr" text="Supplier">
+               <content>
+                  <AnchorPane prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+            <Tab fx:id="brand" onSelectionChanged="#brandd" text="Brand">
+               <content>
+                  <AnchorPane prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+            <Tab fx:id="category" onSelectionChanged="#categoryy" text="Category">
+               <content>
+                  <AnchorPane prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+            <Tab fx:id="unittt" onSelectionChanged="#viewunit" text="Unit">
+               <content>
+                  <AnchorPane fx:id="unit" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </children>
+</AnchorPane>

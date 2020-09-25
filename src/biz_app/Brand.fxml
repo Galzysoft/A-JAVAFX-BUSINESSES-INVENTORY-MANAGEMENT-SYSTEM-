@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" style="-fx-background-image: C:\Users\ONYEKA\Documents\NetBeansProjects\BIZ_APP\src\biz_app\images\sddd.jpg;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="biz_app.BrandController">
+ 
+                                       <stylesheets>
+        <URL value="@brand.css" />
+    </stylesheets>
+
+
+    <children>
+      <VBox alignment="BOTTOM_CENTER" layoutY="27.0" maxHeight="-Infinity" prefHeight="492.0" prefWidth="721.0" spacing="10.0" style="-fx-background-color: #3B0F39; -fx-background-radius: 20;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="27.0" VBox.vgrow="ALWAYS">
+         <children>
+            <HBox maxHeight="-Infinity" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox alignment="BOTTOM_LEFT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="42.0" prefWidth="512.0" spacing="20.0" style="-fx-background-color: #9F899E; -fx-border-color: black; -fx-background-radius: 200; -fx-border-radius: 200;" HBox.hgrow="ALWAYS">
+                     <children>
+                        <JFXButton layoutX="10.0" layoutY="10.0" onAction="#addd" ripplerFill="#1b0851" style="-fx-background-color: darkslateblue; -fx-background-radius: 20;" text="Save" textFill="#f2f0f0" underline="true" HBox.hgrow="ALWAYS" />
+                        <JFXButton onAction="#update" ripplerFill="#1f0068" style="-fx-background-color: orange; -fx-background-radius: 20;" text="Edit" textFill="#f2f0f0" underline="true" HBox.hgrow="ALWAYS" />
+                        <JFXButton layoutX="47.0" layoutY="10.0" onAction="#clear" ripplerFill="#1f0068" style="-fx-background-color: green; -fx-background-radius: 20;" text="Clear" textFill="#f2f0f0" underline="true" HBox.hgrow="ALWAYS" />
+                        <JFXButton layoutX="47.0" layoutY="10.0" onAction="#delete" ripplerFill="#1f0068" style="-fx-background-color: red; -fx-background-radius: 20;" text="Delete" textFill="#f2f0f0" underline="true" HBox.hgrow="ALWAYS" />
+                     </children>
+                     <effect>
+                        <InnerShadow height="68.44" radius="52.9325" width="145.29" />
+                     </effect>
+                     <padding>
+                        <Insets bottom="8.0" left="10.0" />
+                     </padding>
+                  </HBox>
+                  <Text fill="#e2dae4" opacity="0.78" strokeType="OUTSIDE" strokeWidth="0.0" text="Brand" textAlignment="CENTER" underline="true" wrappingWidth="208.13671875" HBox.hgrow="ALWAYS">
+                     <effect>
+                        <DropShadow color="#070007" height="136.42" radius="33.605" spread="0.55" width="0.0" />
+                     </effect>
+                     <font>
+                        <Font name="Batang" size="43.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_LEFT" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="705.0" spacing="30.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <JFXTextField fx:id="bizname312" focusColor="#7a3675" labelFloat="true" onKeyReleased="#search" prefHeight="25.0" prefWidth="133.0" promptText="Search Brand" style="-fx-prompt-text-fill: #1F0068; -fx-text-inner-color: #1F0068; -fx-text-inner-color: white; -fx-prompt-text-fill: white;" unFocusColor="GREEN" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </JFXTextField>
+                        <HBox prefHeight="27.0" prefWidth="549.0" spacing="30.0" HBox.hgrow="ALWAYS">
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" minWidth="-Infinity" prefHeight="366.0" prefWidth="706.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox prefHeight="366.0" prefWidth="186.0" spacing="20.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <JFXTextField fx:id="name" focusColor="#7a3675" labelFloat="true" layoutX="20.0" layoutY="30.0" prefHeight="25.0" prefWidth="157.0" promptText="Brand Name" style="-fx-prompt-text-fill: #1F0068; -fx-text-inner-color: #1F0068; -fx-text-inner-color: white; -fx-prompt-text-fill: white;" unFocusColor="GREEN" />
+                        <JFXComboBox fx:id="suppliedby" focusColor="#7a3675" labelFloat="true" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="213.0" promptText="Supplied By" style="-fx-text-inner-color: WHITE; -fx-prompt-text-fill: WHITE; -fx-text-fill: WHITE;" stylesheets="@brand.css" unFocusColor="#046b13" />
+                        <JFXTextArea fx:id="description" focusColor="#7a3675" labelFloat="true" prefHeight="172.0" prefWidth="184.0" promptText="Brand Description" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="GREEN" />
+                     </children>
+                     <padding>
+                        <Insets left="10.0" right="10.0" top="20.0" />
+                     </padding>
+                  </VBox>
+                  <TableView fx:id="tableee" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#selected" opacity="0.51" prefHeight="366.0" prefWidth="485.0" HBox.hgrow="ALWAYS">
+                     <columns>
+                        <TableColumn fx:id="tname" prefWidth="134.0" text="BRAND NAME" />
+                        <TableColumn fx:id="tsupp" prefWidth="163.0" text="SUPPLIER" />
+                        <TableColumn fx:id="tdessc" prefWidth="208.0" text="BRAND DESCRIPTION" />
+                     </columns>
+                     <effect>
+                        <InnerShadow choke="0.33" height="47.69" radius="75.1725" width="255.0" />
+                     </effect>
+                  </TableView>
+               </children>
+            </HBox>
+         </children>
+         <effect>
+            <DropShadow height="249.07" radius="125.5175" spread="0.44" width="255.0" />
+         </effect>
+      </VBox>
+   </children>
+</VBox>

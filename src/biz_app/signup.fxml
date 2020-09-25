@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="472.0" prefWidth="621.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="biz_app.SignupController">
+    <stylesheets>
+        <URL value="@signup.css" />
+    </stylesheets>
+   <children>
+      <HBox layoutX="1.0" prefHeight="472.0" prefWidth="620.0">
+         <children>
+            <VBox>
+               <children>
+                  <ImageView fitHeight="401.0" fitWidth="155.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/sddd.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="401.0" fitWidth="155.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/sddd.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="401.0" fitWidth="155.0" layoutX="10.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/sddd.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="10.0">
+               <children>
+                  <ImageView fitHeight="401.0" fitWidth="155.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/sddd.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="401.0" fitWidth="155.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/sddd.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="401.0" fitWidth="155.0" layoutX="10.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/sddd.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox layoutX="165.0" layoutY="10.0">
+               <children>
+                  <ImageView fitHeight="401.0" fitWidth="155.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/sddd.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="401.0" fitWidth="155.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/sddd.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="401.0" fitWidth="155.0" layoutX="10.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/sddd.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox layoutX="320.0" layoutY="10.0" prefHeight="472.0" prefWidth="94.0">
+               <children>
+                  <ImageView fitHeight="401.0" fitWidth="155.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/sddd.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="401.0" fitWidth="155.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/sddd.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="401.0" fitWidth="155.0" layoutX="10.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/sddd.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="409.0" prefWidth="621.0" AnchorPane.bottomAnchor="63.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="256.0" prefWidth="587.0">
+               <children>
+                  <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="361.0" prefWidth="459.0" style="-fx-background-color: #3B0F39; -fx-background-radius: 20;">
+                     <effect>
+                        <DropShadow height="249.07" radius="125.5175" spread="0.44" width="255.0" />
+                     </effect>
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                     <children>
+                        <HBox prefHeight="267.0" prefWidth="459.0">
+                           <children>
+                              <VBox prefHeight="201.0" prefWidth="227.0" spacing="20.0">
+                                 <children>
+                                    <JFXTextField fx:id="bizname" focusColor="#7a3675" labelFloat="true" layoutX="20.0" layoutY="30.0" prefHeight="25.0" prefWidth="157.0" promptText="Business Name" style="-fx-prompt-text-fill: #1F0068; -fx-text-inner-color: #1F0068; -fx-text-inner-color: white; -fx-prompt-text-fill: white;" unFocusColor="GREEN">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font></JFXTextField>
+                                    <JFXTextField fx:id="address" focusColor="#7a3675" labelFloat="true" layoutX="20.0" layoutY="30.0" prefHeight="25.0" prefWidth="157.0" promptText="Address" style="-fx-prompt-text-fill: #1F0068; -fx-text-inner-color: #1F0068; -fx-text-inner-color: white; -fx-prompt-text-fill: white;" unFocusColor="GREEN">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font></JFXTextField>
+                                    <JFXTextField fx:id="phone" focusColor="#7a3675" labelFloat="true" layoutX="20.0" layoutY="75.0" prefHeight="25.0" prefWidth="157.0" promptText="Phone Contact" style="-fx-prompt-text-fill: #1F0068; -fx-text-inner-color: #1F0068; -fx-text-inner-color: white; -fx-prompt-text-fill: white;" unFocusColor="GREEN">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font></JFXTextField>
+                                    <JFXTextField fx:id="phone1" focusColor="#7a3675" labelFloat="true" prefHeight="25.0" prefWidth="157.0" promptText="Security question" style="-fx-prompt-text-fill: #1F0068; -fx-text-inner-color: #1F0068; -fx-text-inner-color: white; -fx-prompt-text-fill: white;" unFocusColor="GREEN">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="phone2" focusColor="#7a3675" labelFloat="true" prefHeight="25.0" prefWidth="157.0" promptText="Security Answer" style="-fx-prompt-text-fill: #1F0068; -fx-text-inner-color: #1F0068; -fx-text-inner-color: white; -fx-prompt-text-fill: white;" unFocusColor="GREEN">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </JFXTextField>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" top="20.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox layoutX="10.0" layoutY="10.0" prefHeight="204.0" prefWidth="237.0" spacing="20.0">
+                                 <children>
+                                    <JFXTextField fx:id="username" focusColor="#7a3675" labelFloat="true" layoutX="20.0" layoutY="30.0" prefHeight="25.0" prefWidth="157.0" promptText="Username" style="-fx-prompt-text-fill: #1F0068; -fx-text-inner-color: #1F0068; -fx-text-inner-color: white; -fx-prompt-text-fill: white;" unFocusColor="GREEN">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font></JFXTextField>
+                                    <JFXPasswordField fx:id="password" focusColor="#7a3675" labelFloat="true" promptText="PassWord" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="GREEN">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font></JFXPasswordField>
+                                    <JFXPasswordField fx:id="retype_password" focusColor="#7a3675" labelFloat="true" promptText="Retype_PassWord" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="GREEN">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font></JFXPasswordField>
+                                    <JFXTextField fx:id="email" focusColor="#7a3675" labelFloat="true" prefHeight="25.0" prefWidth="157.0" promptText="Email Address" style="-fx-prompt-text-fill: #1F0068; -fx-text-inner-color: #1F0068; -fx-text-inner-color: white; -fx-prompt-text-fill: white;" unFocusColor="GREEN">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font></JFXTextField>
+                                    <JFXTextArea focusColor="#7a3675" labelFloat="true" prefHeight="68.0" prefWidth="221.0" promptText="Business Dealngs and Descriptions" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="GREEN">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </JFXTextArea>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" top="20.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <VBox alignment="BOTTOM_CENTER" prefHeight="122.0" prefWidth="459.0" style="-fx-background-color: #3B0F39;">
+                           <children>
+                              <VBox prefHeight="106.0" prefWidth="459.0">
+                                 <children>
+                                    <HBox alignment="CENTER" opacity="0.8">
+                                       <children>
+                                          <JFXButton fx:id="btn" buttonType="RAISED" prefHeight="25.0" prefWidth="138.0" style="-fx-background-color: green;" text="SignUp" textFill="#e2deea">
+                                             <effect>
+                                                <DropShadow height="106.99" radius="89.9975" spread="0.34" width="255.0" />
+                                             </effect>
+                                             <tooltip>
+                                                <Tooltip text="Click to signup" />
+                                             </tooltip>
+                                          </JFXButton>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="BOTTOM_CENTER" style="-fx-background-color: A7A7A7;">
+                                 <children>
+                                    <JFXButton prefHeight="25.0" prefWidth="368.0" text="Make Sure You Remember Your UserName And Password" textFill="#d31313" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </HBox>
+            <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="34.0">
+               <children>
+                  <JFXButton onAction="#ButtonAction" prefHeight="33.0" prefWidth="31.0" text=" ">
+                     <graphic>
+                        <ImageView fitHeight="49.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Close%20Window_52px_2.png" />
+                           </image>
+                           <effect>
+                              <ColorAdjust brightness="0.28" contrast="1.0" hue="0.35" saturation="-0.05" />
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Close  SignUp" />
+                     </tooltip>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

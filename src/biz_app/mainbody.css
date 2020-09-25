@@ -1,0 +1,49 @@
+/*
+ * Empty Stylesheet file.
+ */
+ 
+.animated.option.button{
+    -fx-background-radius:50px;
+        -fx-pref-width:50px;
+        -fx-background-color:#3B0F39;
+        -fx-border-radius: 50px;
+        -fx-border-color: white;
+        -fx-text-fill: white;
+        -fx-border-width: 4px;
+        -fx-pref-heigth:50px;
+}
+.animated.option.sub.button{
+         -fx-background-color: #3B0F39;
+        
+}.animated.option.sub.button1{
+         -fx-background-color: yellow;
+        
+}.animated.option.sub.button2{
+         -fx-background-color: red;
+        
+}
+/*
+ * Empty Stylesheet file.
+ */
+
+.jfxbutton:hover{
+    -fx-background-color:    #3B0F39;
+    -fx-text-fill:  white;
+    -fx-alignment: center;
+}
+.jfx-snackbar-content{
+    -fx-background-color:  #1F0068;
+}
+.jfx-snackbar-toast{
+    -fx-text-fill:#ffffff;
+}
+
+
+.jfx-decorator{
+    -fx-decorator-color: #3B0F39;}
+.jfx-decorator .jfx-decorator-buttons-container{
+  -fx-background-color:    -fx-decorator-color;}
+.jfx-decorator.resize-border{
+    -fx-border-color: -fx-decorator-color;
+    -fx-border-width: 0 2 2 2;
+   }

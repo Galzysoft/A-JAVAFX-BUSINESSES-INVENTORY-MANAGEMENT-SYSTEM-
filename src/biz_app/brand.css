@@ -1,0 +1,20 @@
+/*
+ * Empty Stylesheet file.
+ */
+jfx-combo-box >.cell {
+	 
+-fx-text-fill: WHITE
+ }
+.jfxbutton:hover{
+    -fx-background-color:   green;
+    -fx-text-fill:  white;
+    -fx-alignment: center;
+}
+.jfx-snackbar-content{
+    -fx-background-color:  #1F0068;
+}
+.jfx-snackbar-toast{
+    -fx-text-fill:#ffffff;
+}
+
+

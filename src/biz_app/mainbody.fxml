@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="MAINPANELL" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#res" onMouseDragEntered="#res" onScroll="#res" prefHeight="600.0" prefWidth="1010.0" scaleShape="false" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="biz_app.MainbodyController">
+  
+                                       <stylesheets>
+        <URL value="@mainbody.css" />
+    </stylesheets>
+
+                                        <top>
+      <AnchorPane prefHeight="63.0" prefWidth="1063.0" style="-fx-background-color: #3B0F39;">
+         <children>
+            <HBox fx:id="barod" layoutY="11.0" prefHeight="70.0" prefWidth="1145.0" spacing="10.0" style="-fx-background-color: #3B0F39;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" BorderPane.alignment="CENTER">
+               <children>
+                  <MenuBar maxHeight="1.7976931348623157E308" prefHeight="55.0" prefWidth="252.0">
+                     <menus>
+                        <Menu mnemonicParsing="false" text="File">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#logout" text="LogOut" />
+                              <MenuItem mnemonicParsing="false" onAction="#ButtonActione" text="Close" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Edit" />
+                        <Menu mnemonicParsing="false" text="Help">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="About" />
+                           </items>
+                        </Menu>
+                     </menus>
+                     <HBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </HBox.margin>
+                     <effect>
+                        <DropShadow color="#300236" height="75.85" radius="18.4625" width="0.0">
+                           <input>
+                              <InnerShadow choke="0.23" color="#1e0202" height="68.325" radius="30.66625" width="56.34" />
+                           </input>
+                        </DropShadow>
+                     </effect>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </MenuBar>
+                  <HBox alignment="CENTER" prefHeight="70.0" prefWidth="672.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="74.0" prefWidth="333.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Text fill="#076f16" layoutX="23.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BizApp" translateX="10.0" wrappingWidth="291.267578125" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font name="Century" size="61.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow height="74.38" radius="44.8425" spread="0.56" width="106.99" />
+                                 </effect>
+                              </Text>
+                              <Text fill="#303231" layoutX="29.0" layoutY="45.13623046875" strokeType="OUTSIDE" strokeWidth="0.0" text="BizApp" translateX="6.0" wrappingWidth="218.267578125" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font name="Century" size="61.0" />
+                                 </font>
+                                 <effect>
+                                    <Lighting>
+                                       <bumpInput>
+                                          <Shadow />
+                                       </bumpInput>
+                                       <light>
+                                          <Light.Distant />
+                                       </light>
+                                    </Lighting>
+                                 </effect>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="TOP_RIGHT" layoutX="1147.0" layoutY="5.0" opacity="0.76" prefHeight="70.0" prefWidth="155.0" style="-fx-background-color: #3B0F39;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <effect>
+                  <Blend opacity="0.66" />
+               </effect>
+            </HBox>
+         </children>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </AnchorPane>
+   </top>
+   <left>
+      <VBox prefHeight="526.0" prefWidth="167.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox minHeight="-Infinity" prefHeight="526.0" prefWidth="167.0" spacing="30.0" style="-fx-background-color: #53315A;" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox fx:id="dham" prefHeight="42.0" prefWidth="167.0" style="-fx-background-color: whitesmoke; -fx-background-radius: 0; -fx-border-color: violet; -fx-border-width: 1; -fx-border-radius: 2000;">
+                     <children>
+                        <JFXNodesList fx:id="list" alignment="CENTER" prefHeight="50.0" prefWidth="35.0" rotate="-90.0" spacing="15.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <JFXButton fx:id="click" buttonType="RAISED" prefHeight="53.0" prefWidth="56.0" style="-fx-background-color: green; -fx-background-radius: 50; -fx-border-color: white; -fx-border-radius: 50;" text="Click Me" textFill="#eeebeb">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                                 <tooltip>
+                                    <Tooltip text="Click  for More Details" />
+                                 </tooltip>
+                              </JFXButton>
+                              <JFXButton fx:id="logout" buttonType="RAISED" layoutX="10.0" layoutY="10.0" onAction="#logout" prefHeight="50.0" prefWidth="52.0" style="-fx-background-color: orange; -fx-background-radius: 50; -fx-border-color: white; -fx-border-radius: 50;" text="Log Out" textFill="#eeebeb">
+                                 <font>
+                                    <Font size="9.0" />
+                                 </font>
+                                 <tooltip>
+                                    <Tooltip text="Click to LogOut" />
+                                 </tooltip>
+                              </JFXButton>
+                              <JFXButton fx:id="exit" buttonType="RAISED" layoutX="10.0" layoutY="74.0" onAction="#ButtonActione" prefHeight="36.0" prefWidth="38.0" style="-fx-background-color: red; -fx-background-radius: 50; -fx-border-color: white; -fx-border-radius: 50;" text="Exit" textFill="#eeebeb">
+                                 <tooltip>
+                                    <Tooltip text="Click To Exit" />
+                                 </tooltip>
+                              </JFXButton>
+                           </children>
+                        </JFXNodesList>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <effect>
+                        <InnerShadow height="115.89" radius="48.55" width="80.31" />
+                     </effect>
+                  </HBox>
+                  <JFXButton fx:id="home" buttonType="RAISED" maxWidth="1.7976931348623157E308" onAction="#dashboard" styleClass="jfxbutton" text="Home                 " textFill="#fcf8f8" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Home_52px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <ripplerFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.319047619047619" startY="1.0">
+                           <stops>
+                              <Stop color="#0c010d" />
+                              <Stop color="#e00ce8" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </ripplerFill>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="home1" buttonType="RAISED" maxWidth="1.7976931348623157E308" onAction="#STORE" styleClass="jfxbutton" text="Store                     " textFill="#fcf8f8">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Shopping%20Cart_52px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <ripplerFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.319047619047619" startY="1.0">
+                           <stops>
+                              <Stop color="#0c010d" />
+                              <Stop color="#e00ce8" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </ripplerFill>
+                  </JFXButton>
+                  <JFXButton fx:id="home11" buttonType="RAISED" layoutX="10.0" layoutY="106.0" maxWidth="1.7976931348623157E308" onAction="#Sales" styleClass="jfxbutton" text="Sales               " textFill="#fcf8f8" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Sale_52px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <ripplerFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.319047619047619" startY="1.0">
+                           <stops>
+                              <Stop color="#0c010d" />
+                              <Stop color="#e00ce8" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </ripplerFill>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="home111" buttonType="RAISED" layoutX="10.0" layoutY="148.0" maxWidth="1.7976931348623157E308" onAction="#Emplotee" styleClass="jfxbutton" text="Employees      " textFill="#fcf8f8" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/User%20Groups_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <ripplerFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.319047619047619" startY="1.0">
+                           <stops>
+                              <Stop color="#0c010d" />
+                              <Stop color="#e00ce8" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </ripplerFill>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="home1111" buttonType="RAISED" layoutX="10.0" layoutY="190.0" maxWidth="1.7976931348623157E308" styleClass="jfxbutton" text="Settings           " textFill="#fcf8f8" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Settings_52px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <ripplerFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.319047619047619" startY="1.0">
+                           <stops>
+                              <Stop color="#0c010d" />
+                              <Stop color="#e00ce8" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </ripplerFill>
+                  </JFXButton>
+                  <JFXButton fx:id="home12" buttonType="RAISED" layoutX="10.0" layoutY="106.0" maxWidth="1.7976931348623157E308" styleClass="jfxbutton" text="About            " textFill="#fcf8f8" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/About_52px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <ripplerFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.319047619047619" startY="1.0">
+                           <stops>
+                              <Stop color="#0c010d" />
+                              <Stop color="#e00ce8" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </ripplerFill>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>
